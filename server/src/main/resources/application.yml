@@ -1,0 +1,12 @@
+spring:
+    datasource:
+        url: your_db_url
+        username: postgres
+        password: your_password
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: validate
+    liquibase:
+        change-log: classpath:db/changelog-master.xml
+        enabled: true
